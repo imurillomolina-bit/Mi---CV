@@ -3,21 +3,14 @@
     --secondary: #34495e;
     --background: #f4f6f9;
     --white: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary: #ecf0f1;
-        --secondary: #bdc3c7;
-        --background: #1e1e1e;
-        --white: #2c2c2c;
-    }
+    color-scheme: light;
 }
 
 body {
     margin: 0;
     font-family: g, sans-serif;
     background-color: var(--background);
+    user-select: none;
 }
 
 .contenido {
@@ -57,6 +50,7 @@ body {
 .lado-derecho {
     width: 70%;
     padding: 40px;
+    box-sizing: border-box;
 }
 
 .lado-derecho h1 {
