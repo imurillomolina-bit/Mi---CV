@@ -317,3 +317,11 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ── IMPRESIÓN / PDF (A4, una página) ── */
+@page { size: A4; margin: 0; }
+@media print {
+    html, body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .contenido { margin: 0; max-width: none; width: 210mm; min-height: 297mm; box-shadow: none; border-radius: 0; }
+}
